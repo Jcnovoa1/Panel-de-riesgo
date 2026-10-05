@@ -1,0 +1,24 @@
+{
+  "name": "panel-riesgo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "dev:real": "vite --mode real",
+    "server": "node server/index.mjs",
+    "dev:full": "concurrently -k \"npm:server\" \"npm:dev:real\""
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "concurrently": "^9.0.0"
+  }
+}
